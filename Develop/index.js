@@ -56,8 +56,9 @@ inquirer.prompt([
 ]);
 
 const generateREADME = (answers) =>
+
 `
-# ${answers.projectname}
+# ${answers.projectname} ![License: ${answers.license}](https://img.shields.io/static/v1?label=License&message=${answers.license}&color=ff69b4)
 
 
 ## Description
@@ -77,6 +78,7 @@ ${answers.description}
 
 ## Installation
 
+The command that should be run to install dependencies is: 
 ${answers.install}
 
 
@@ -97,6 +99,7 @@ ${answers.contributing}
 
 ## Tests
 
+The command that should be run to run tests is:
 ${answers.tests}
 
 
@@ -109,8 +112,6 @@ Email Address: ${answers.email}
 
 
 `;
-
-
 
 promptUser()
 .then((answers) => writeFileAsync('README.md', generateREADME(answers)))
