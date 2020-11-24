@@ -56,7 +56,59 @@ inquirer.prompt([
 ]);
 
 const generateREADME = (answers) =>
-`Hello`;
+`
+# ${answers.projectname}
+
+
+## Description
+
+${answers.description}
+
+
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+
+
+## Installation
+
+${answers.install}
+
+
+## Usage
+
+${answers.using}
+
+
+## License
+
+${answers.license}
+
+
+## Contributing
+
+${answers.contributing}
+
+
+## Tests
+
+${answers.tests}
+
+
+## Questions
+
+If you have any further questions regarding this project, please feel free to contact.
+
+GitHub Username: ${answers.username}
+Email Address: ${answers.email}
+
+
+`;
 
 
 
