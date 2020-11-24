@@ -55,16 +55,12 @@ inquirer.prompt([
     }
 ]);
 
+const generateREADME = (answers) =>
+`Hello`;
 
 
-// function to write README file
-function writeToFile(fileName, data) {
-}
 
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
+promptUser()
+.then((answers) => writeFileAsync('README.md', generateREADME(answers)))
+.then(() => console.log('Successfully write to index.html'))
+.catch((err) => console.error(err));
