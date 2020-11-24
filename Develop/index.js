@@ -89,7 +89,7 @@ ${answers.using}
 
 ## License
 
-${answers.license}
+This application is covered under the ${answers.license} license.
 
 
 ## Contributing
