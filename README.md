@@ -2,7 +2,7 @@
 
 This README generator allows the user to quickly generate a professional README for a new project.
 
-[![Live Demo](Assets/Images/img1.png)](https://www.screencast.com/t/xiOQNmBNL1)
+[![Live Demo](Assets/Images/img1.png)](https://www.screencast.com/t/c0zD7ZMi24)
 
 1. First I created a `.gitignore` file and then installed `package.json` using `npm init`
 
